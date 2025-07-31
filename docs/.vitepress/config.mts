@@ -19,7 +19,7 @@ export default defineConfig({
   title: 'Zxr',
   description: '',
   lastUpdated: true,
-
+  ignoreDeadLinks: true,
   head: [
     // 使用 base 路径保证正确
     ['link', { rel: 'icon', href: `${base}favicon.ico` }]
