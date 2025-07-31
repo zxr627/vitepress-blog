@@ -37,8 +37,7 @@ export default defineConfig({
     lastUpdatedText: '上次更新于',
 
     // 设置 logo 路径也用 base
-    logo: `${base}logo.png`,
-
+    logo: 'a.jpg',
     nav: [
       { text: '首页', link: '/' },
       {
@@ -48,7 +47,7 @@ export default defineConfig({
           { text: '分类', link: '/about/' }
         ]
       },
-      { text: '关于作者', link: 'https://github.com/zxr627?tab=projects' }
+      { text: '关于作者', link: 'https://github.com/zxr627?tab=repositories' }
     ],
     socialLinks: [
       {

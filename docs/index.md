@@ -2,8 +2,8 @@
 layout: home
 # 首页部分元素定制
 blog:
- name: 'Zxr'
- motto: 路漫漫其修远兮
+ name: ''
+ motto: 路漫漫其修远兮-
  inspiring:
   - 千万不要因为走得太久，而忘记了我们为什么出发
   - 人生就像一场修行，你不可能一开始就修成正果
@@ -11,5 +11,5 @@ blog:
   - 生活的真谛不在繁华，而在于淡泊
  # 设置 inspiringTimeout 可以实现自动切换
  inspiringTimeout: 3000
- pageSize: 6
+ pageSize: 2
 ---
