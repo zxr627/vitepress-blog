@@ -22,7 +22,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   head: [
     // 使用 base 路径保证正确
-    ['link', { rel: 'icon', href: `${base}favicon.ico` }]
+    ['link', { rel: 'icon', href: `${base}a.jpg` }]
   ],
 
   themeConfig: {
