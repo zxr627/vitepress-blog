@@ -14,5 +14,5 @@ blog:
   - 坚持写作，持续学习，保持热爱
  # 设置 inspiringTimeout 可以实现自动切换
  inspiringTimeout: 3000
- pageSize: 2
+ pageSize: 6
 ---
