@@ -82,7 +82,7 @@ const blogTheme = getThemeConfig({
       //   link: 'https://theme.sugarat.top/group.html',
       // }
     ],
-    duration: 0
+    duration: 3000,   // 公告显示时间 0为不自动关闭
   },
 })
 

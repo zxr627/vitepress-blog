@@ -1,6 +1,12 @@
+---
+hidden: true
+---
+
+
 <script setup>
 import CodeWithPassword from '../.vitepress/components/CodeWithPassword.vue'
 </script>
+
 
 ---
 top: 1
