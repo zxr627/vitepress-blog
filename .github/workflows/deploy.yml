@@ -61,9 +61,11 @@ jobs:
           source: ./docs/.vitepress/dist
           destination: ./_site
 
-      # 7. 添加 CNAME（_site 现在存在）
+      # 7. 添加 CNAME（使用 mv 避免权限问题）
       - name: Add CNAME
-        run: echo "zxroo.top" > ./_site/CNAME
+        run: |
+          echo "zxroo.top" > CNAME
+          mv CNAME ./_site/CNAME
 
       # 8. 上传 artifact
       - name: Upload artifact
