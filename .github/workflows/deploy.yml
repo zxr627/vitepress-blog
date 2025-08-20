@@ -54,18 +54,16 @@ jobs:
       - name: Build VitePress
         run: pnpm build
 
-      # 6. 构建 Jekyll 资源（将 dist 拷贝到 _site）
+      # 6. 添加 CNAME（写入 dist，而不是 _site）
+      - name: Add CNAME
+        run: echo "zxroo.top" > ./docs/.vitepress/dist/CNAME
+
+      # 7. 构建 Jekyll 资源（dist -> _site）
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./docs/.vitepress/dist
           destination: ./_site
-
-      # 7. 添加 CNAME（使用 mv 避免权限问题）
-      - name: Add CNAME
-        run: |
-          echo "zxroo.top" > CNAME
-          mv CNAME ./_site/CNAME
 
       # 8. 上传 artifact
       - name: Upload artifact
