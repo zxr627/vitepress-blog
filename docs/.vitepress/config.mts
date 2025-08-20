@@ -5,7 +5,7 @@ import { blogTheme } from './blog-theme'
 
 // ✅ 设置 base：生产环境才用仓库名，开发用 '/'
 const base = process.env.NODE_ENV === 'production'
-    ? '/'
+    ? '/vitepress-blog/'
     : '/'
 
 // Vitepress 默认配置
