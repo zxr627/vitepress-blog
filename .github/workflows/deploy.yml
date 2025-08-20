@@ -54,16 +54,16 @@ jobs:
       - name: Build VitePress
         run: pnpm build
 
-      # 6. 将 CNAME 文件放入 _site（保证自定义域名生效）
-      - name: Add CNAME
-        run: echo "zxroo.top" > ./_site/CNAME
-
-      # 7. 构建 Jekyll 资源用于 Pages 上传
+      # 6. 构建 Jekyll 资源（将 dist 拷贝到 _site）
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./docs/.vitepress/dist
           destination: ./_site
+
+      # 7. 添加 CNAME（_site 现在存在）
+      - name: Add CNAME
+        run: echo "zxroo.top" > ./_site/CNAME
 
       # 8. 上传 artifact
       - name: Upload artifact
